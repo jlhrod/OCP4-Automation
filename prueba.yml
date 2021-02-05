@@ -1,0 +1,5 @@
+---
+# tasks
+
+- name: Prueba (without 'args')
+  command: /usr/bin/date
