@@ -5,4 +5,4 @@
   tasks:
 
 - name: Date (without 'args')
-  command: /usr/bin/date
+  shell: /usr/bin/date
