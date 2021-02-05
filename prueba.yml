@@ -4,5 +4,5 @@
 
   tasks:
 
-- name: Date (without 'args')
-  shell: /usr/bin/date
+  - name: Date (without 'args')
+    shell: /usr/bin/date
