@@ -4,11 +4,11 @@
 
   tasks:
 
-  - name: virsh shutdown
+  - name: virsh start
     shell: /usr/bin/virsh start master0.ocp4-1.genup.com
 
-  - name: virsh shutdown
+  - name: virsh start
     shell: /usr/bin/virsh start master1.ocp4-1.genup.com
 
-  - name: virsh shutdown
+  - name: virsh start
     shell: /usr/bin/virsh start master2.ocp4-1.genup.com
