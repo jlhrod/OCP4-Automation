@@ -6,3 +6,12 @@
 
   - name: Date (without 'args')
     shell: /usr/bin/date
+    register: command_output
+
+  - debug: msg="{{command_output.stdout}}"
+ 
+  - name: virsh
+    shell: /usr/bin/virsh list --all
+    register: command_output2
+
+  - debug: msg="{{command_output2.stdout}}"
