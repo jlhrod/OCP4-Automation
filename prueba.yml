@@ -1,5 +1,8 @@
 ---
-# tasks
+- name: Date!
+  hosts: all
 
-- name: Prueba (without 'args')
+  tasks:
+
+- name: Date (without 'args')
   command: /usr/bin/date
