@@ -1,0 +1,14 @@
+---
+- name: Shutdown OCP4-1 VMs
+  hosts: all
+
+  tasks:
+
+  - name: virsh shutdown
+    shell: /usr/bin/virsh shutdown master0.ocp4-1.genup.com
+
+  - name: virsh shutdown
+    shell: /usr/bin/virsh shutdown master1.ocp4-1.genup.com
+
+  - name: virsh shutdown
+    shell: /usr/bin/virsh shutdown master2.ocp4-1.genup.com
